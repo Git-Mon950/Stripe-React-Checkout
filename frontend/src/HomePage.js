@@ -9,8 +9,8 @@ const HomePage = () => {
 	const location = useLocation();
 
 	useEffect(() => {
-		Check to see if this is a redirect back from Checkout
-		const query = new URLSearchParams(window.location.search);
+		// Check to see if this is a redirect back from Checkout
+		// const query = new URLSearchParams(window.location.search);
 		const values = QueryString.parse(location.search);
 
 		if (values.success) {
