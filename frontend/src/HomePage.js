@@ -15,7 +15,7 @@ const HomePage = () => {
 
 		if (values.success) {
 			console.log(
-				'Order placed! You will receive an email confirmation.'
+				// 'Order placed! You will receive an email confirmation.'
 			);
 		}
 
