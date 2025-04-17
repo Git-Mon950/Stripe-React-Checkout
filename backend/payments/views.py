@@ -27,6 +27,5 @@ class StripeCheckoutView(APIView):
             return redirect(checkout_session.url)
         except:
             return Response(
-                {'error': 'Something went wrong when creating stripe checkout session'},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
