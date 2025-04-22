@@ -13,7 +13,11 @@ const HomePage = () => {
 		// const query = new URLSearchParams(window.location.search);
 		const values = QueryString.parse(location.search);
 
-		
+		if (values.success) {
+			console.log(
+				'Order placed! You will receive an email confirmation.'
+			);
+		}
 
 		if (values.canceled) {
 			console.log(
